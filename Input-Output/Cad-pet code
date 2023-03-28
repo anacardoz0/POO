@@ -1,28 +1,22 @@
-* @author ana.ccardozo (uc22100854)
- */
+import javax.swing.JOptionPane;
+
+/* @author ana.ccardozo (uc22100854) */
+
 public class CadPet {
 
     public static void main(String[] args) {
        JOptionPane.showMessageDialog(null, "CADASTRO");
        String nome = JOptionPane.showInputDialog("Informe seu nome: ");
- 
-       String idade = JOptionPane.showInputDialog("Informe sua idade: ");
-       int idadeInteira = Integer.parseInt(idade);
-       
+
        String address = JOptionPane.showInputDialog("Informe seu endereço:");
        String cpf= JOptionPane.showInputDialog("Informe seu CPF:");
        String number = JOptionPane.showInputDialog("Informe seu número:");
-       
-        JOptionPane.showMessageDialog(null, "CADASTRO DO CACHORRO");
         
         String nomepet = JOptionPane.showInputDialog("Informe o nome do pet: ");
         String tipoanimal = JOptionPane.showInputDialog("Informe o tipo do Animal: ");
-
-       
-       String info = JOptionPane.showInputDialog("Alguma observação sobre o pet?");
+        String info = JOptionPane.showInputDialog("Alguma observação sobre o pet?");
        
         JOptionPane.showMessageDialog(null, "Dono do pet: " + nome
-                                           +"\nIdade: " +idade
                                            +"\nEndereço: " +address
                                            +"\nCPF: "+cpf
                                            +"\nNome do pet: " +nomepet
